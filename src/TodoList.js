@@ -38,13 +38,13 @@ const TodoList = () => {
         <Box
             bg={{
                 linearGradient: {
-                    colors: ['blue.500', 'gray.400'],
+                    colors: ['blue.700', 'blue.300'],
                     start: [0, 0],
                     end: [1, 0],
                 },
             }}
             p="12"
-            rounded="xl"
+           rounded="2xl"
             _text={{
                 fontSize: 'md',
                 fontWeight: 'bold',
@@ -88,7 +88,9 @@ const TodoList = () => {
                 }}
             >
                 <VStack w="100%" space={5} alignSelf="center">
-                    <Heading fontSize="2xl">CRUD</Heading>
+                    <Heading fontSize="2xl"
+                    textAlign= 'center'
+                    >CRUD APP</Heading>
                     <View
                         style={{
                             flexDirection: 'row',
@@ -110,7 +112,7 @@ const TodoList = () => {
                                 <Icon
                                     ml="2"
                                     size="7"
-                                    color="gray.100"
+                                    color="gray.400"
                                     as={<FontAwesome5 name="pencil-alt" />}
                                 />
                             }
